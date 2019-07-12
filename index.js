@@ -8,6 +8,8 @@ app.use(bodyParser.json())
 
 app.use(require('./routes/marca'))
 
+app.use(require('./routes/modelo'))
+
 mongoose.connect('mongodb://localhost:27017/taller', { useNewUrlParser: true }, (error) => {
     if (error) {
         throw new Error;

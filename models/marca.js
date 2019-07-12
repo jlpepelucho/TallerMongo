@@ -6,7 +6,7 @@ let marcaSchema = new Schema({
         type: String
     },
     nombre: {
-        type: String,
+        type: String
     }
 })
 module.exports = mongoose.model('Marca', marcaSchema);

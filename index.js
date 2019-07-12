@@ -10,6 +10,8 @@ app.use(require('./routes/marca'))
 
 app.use(require('./routes/modelo'))
 
+app.use(require('./routes/vehiculo'))
+
 mongoose.connect('mongodb://localhost:27017/taller', { useNewUrlParser: true }, (error) => {
     if (error) {
         throw new Error;

@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const Marca = require('./marca')
+const Modelo = require('./modelo')
 let Schema = mongoose.Schema;
 
 let vehiculoSchema = new Schema({

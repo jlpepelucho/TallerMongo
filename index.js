@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
     // parse application/json
 app.use(bodyParser.json())
 
-
+app.use(require('./routes/marca'))
 
 mongoose.connect('mongodb://localhost:27017/taller', { useNewUrlParser: true }, (error) => {
     if (error) {

@@ -5,7 +5,7 @@ let Schema = mongoose.Schema;
 
 let vehiculoSchema = new Schema({
     placa: {
-        type: String
+        type: String, max:7
     },
     marca:  [{ type: Schema.Types.ObjectId, ref: 'Marca' }]
     ,
